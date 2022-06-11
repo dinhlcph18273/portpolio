@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            body {
+                 @apply text-[#21243D];
+             }
+             .custom-container{
+                 @apply max-w-4xl mx-auto px-5
+             }
+             /**/
+                 .project__name{
+                 @apply text-[26px] font-bold
+             }
+             .project__meta{
+                @apply flex space-x-4 py-5 
+             }
+             .project__create{
+                @apply inline-block bg-[#FF7C7C] rounded-full text-white px-2
+             }
+             .project__category{
+                 @apply text-[#8695A4];
+             }
+             .project__desc{
+                  @apply text-[16px] font-[500]
+             }
+             /**/ 
+
+             .footer--thumb{
+                 @apply flex flex-row-reverse flex-nowrap content-center justify-center
+             }
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class="custom-container">
+            <div class="py-5">
+                <div class="flex justify-end items-center">
+                    <button class="md:hidden">
+                        | | |
+                    </button>
+                </div>
+                <div class="flex justify-end">
+                    <ul class="hidden md:flex space-x-4">
+                        <li><a href="work.html" class="text-[20px] font-bold">Works</a></li>
+                        <li><a href="blog.html" class="text-[20px] font-bold">Blog</a></li>
+                        <li><a href="index.html" class="text-[20px] font-bold">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="detail">
+        <div class="custom-container">
+            <div class="top_project">
+                <h2 class="project__name">Designing Dashboards with </h2>
+                <h2 class="project__name">usability in mind</h2>
+
+                <div class="project__meta">
+                    <span class="project__create">2020</span>
+                    <a href="" class="project_category">Dashboard, User Experience Design</a>
+                </div>
+                <p class="project__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia
+                    consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <img src="https://picsum.photos/681/460" alt="" class="py-10">
+            </div>
+            <div class="bottom-project">
+                <h1 class="text-[30px] font-bold">Heading 1</h1>
+                <h2 class="text-[26px] font-bold">Heading 2</h2>
+
+                <p class=" project__desc py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit officia
+                    consequat
+                    duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+                <img src="https://picsum.photos/681/460" alt="" class="pb-5">
+                <img src="https://picsum.photos/681/460" alt="" class="pb-5">
+
+            </div>
+        </div>
+    </section>
+    <footer class="max-w-4xl mx-auto mt-[100px]">
+        <div class="text-center py-10">
+            <div class="footer--thumb">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/281193447_3221827994741401_7960501716161214034_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=65pF5pqD7nYAX9dYAOX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVLzY6V4tB0QAaV11Fntm2-daE9f-lB4cCJQbCRA1F5XLQ&oe=62C7D830"
+                    alt="" class="w-[30px] h-[30px] mx-[20px]">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/283691412_347094317505714_8570075379509392377_n.png?stp=cp0_dst-png&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=I_A0G2ypVhEAX_PP0dp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVL6wV49X4FgEqeULehymvmloDaVkq1P1dOdkJIkuXtQwg&oe=62C8F4D5"
+                    alt="" class="w-[30px] h-[30px] mx-[20px]">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/284231284_551926786481931_6115803390238303480_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=z_IJtMPOU0kAX8_mNkI&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVILfAi0-N1EheBX5NSlNzVc57P2aTGnodd76cmy7h2K2w&oe=62C605C7"
+                    alt="" class="w-[30px] h-[30px] mx-[20px]">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/281348609_983645412277445_1032200249434496909_n.png?stp=cp0_dst-png&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=VC65ML-Yy30AX9zRkGr&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIB6gTZWGx8vQh9SwJQSXI10185wPro8-x1yp9ChBXPhA&oe=62C7A09E"
+                    alt="" class="w-[30px] h-[30px] mx-[20px]">
+            </div>
+            <p class="mt-[20px]">Copyright ©2020 All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
